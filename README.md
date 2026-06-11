@@ -16,8 +16,13 @@ Conçu spécifiquement pour la réalité virtuelle, **Visu.lua** s'exécute à p
 * **Moteur d'Animations par Coroutines :** Création de transitions temporelles complexes (variations météo, lumières vacillantes) par le biais de routines asynchrones non bloquantes.
 * **Registre d'Événements (Callbacks) :** Système d'écoute événementiel découplé pour surveiller l'état du moteur et du matériel (ex: connexion/déconnexion d'un périphérique VR).
 
+## 📦 Installation & Intégration
 
-### Via LuaRocks (Recommandé)
+### Téléchargement Direct
+1. Téléchargez le fichier `visu.lua` depuis ce dépôt GitHub.
+2. Placez-le à la racine ou dans le dossier des scripts de votre projet.
+
+
 Déployez instantanément la bibliothèque sur votre environnement système en exécutant la commande suivante :
 ```bash
 luarocks install visu
