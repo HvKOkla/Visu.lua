@@ -19,39 +19,37 @@ Conçu spécifiquement pour la réalité virtuelle, **Visu.lua** s'exécute à p
 
 ### Nouvelles Fonctionnalités (v1.1.0)
 
-#### 🧮 Utilitaires Mathématiques (`Visu.Math`)
+#### Utilitaires Mathématiques (`Visu.Math`)
 * `lerp(a, b, t)` - Interpolation linéaire pour animations fluides
 * `clamp(value, min, max)` - Plafonnement de valeurs
 * `randomRange(min, max)` - Génération de nombres aléatoires dans une plage
 * `distance(x1, y1, x2, y2)` - Calcul de distance entre deux points
 
-#### 🌟 Système de Particules Intégré
+#### Système de Particules Intégré
 * `Visu.emitParticles(x, y, count, config)` - Émettre des particules avec configuration personnalisée
 * `Visu.updateParticles(dt)` - Mettre à jour la physique des particules
 * `Visu.drawParticles()` - Dessiner toutes les particules actives
 * `Visu.setParticleGravity(x, y)` - Configurer la gravité globale
 * `Visu.clearParticles()` - Nettoyer toutes les particules
 
-#### 🐛 Outils de Débogage Visuel
+#### Outils de Débogage Visuel
 * `Visu.toggleDebug()` - Activer/désactiver le mode débogage
 * `Visu.drawDebugInfo()` - Afficher FPS, compte de particules, animations actives
 * `Visu.updateFPS(dt)` - Mettre à jour le compteur de frames par seconde
 
-#### ⚙️ Gestion de Configuration Dynamique
+#### Gestion de Configuration Dynamique
 * `Visu.configure(key, value)` - Définir une option de configuration
 * `Visu.getConfig(key)` - Récupérer une valeur de configuration
 * `Visu.resetConfig()` - Réinitialiser toute la configuration aux valeurs par défaut
 
-#### 🖼️ Sprites avec Effets Avancés
+#### Sprites avec Effets Avancés
 * `Visu.createSpriteBatch(texture, max_sprites)` - Créer un batch de sprites optimisé
 * `Visu.clearSpriteBatches()` - Nettoyer tous les batches de sprites
 
-#### 📚 Documentation Intégrée
-* `Visu.help()` - Affiche l'aide complète avec exemples d'utilisation
+#### Documentation Intégrée
+* `Visu.help()` - Affiche l'aide complète avec exemples d'utilisatio
 
----
-
-## 📦 Installation & Intégration
+##  Installation & Intégration
 
 ### Téléchargement Direct
 1. Téléchargez le fichier `Visu.lua` depuis ce dépôt GitHub.
@@ -89,7 +87,7 @@ Visu.help()
 
 ---
 
-## 📊 Performance
+## Performance
 
 | Métrique | Valeur |
 |----------|--------|
@@ -104,7 +102,6 @@ Visu.help()
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou soumettre une pull request pour améliorer Visu.lua.
 
----
 
 ## 📄 License
 
