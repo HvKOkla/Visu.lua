@@ -1,39 +1,50 @@
 ```
 # Lua-specific ignores
+.luac
 *.luac
-.luacov
+?.luac
 
 # Dependencies
+?.rock
 ?.rockspec
-lua_modules/
+?.lua~*
+lua/
+luarocks/
 
-# Logs and temp files
-*.log
-*.tmp
+# General build artifacts
+build/
+dist/
+*.so
+*.dll
+*.dylib
+
+# Editor/IDE files
+.vscode/
+.idea/
 *.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System files
+# OS specific
 .DS_Store
 Thumbs.db
 
 # Coverage
 coverage/
 htmlcov/
-.coverage
+*.coverage
 
-# Build artifacts
-build/
-dist/
-target/
+# Python artifacts (if mixed project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 ```
