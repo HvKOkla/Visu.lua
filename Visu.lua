@@ -1,17 +1,17 @@
 
-                               Visu.lua 
-      Moteur Unifié de Réalisme Graphique, Post-Processing & VR en Lua
+-- Visu.lua
+-- Moteur Unifié de Réalisme Graphique, Post-Processing & VR en Lua
 
 
 local Visu = {
-    _VERSION = "1.0.0",
-    _DESCRIPTION = "Framework visuel tout-en-un
+    _VERSION = "1.0.1",
+    _DESCRIPTION = "Framework visuel tout-en-un"
 }
 
 -- ----------------------------------------------------------------------------
 -- 1. CONFIGURATION ET CACHE (Optimisation Mémoire)
 -- ----------------------------------------------------------------------------
-local cache_vector = { x = 0, y = 0, z = 0 } 
+local cache_vector = {} 
 local active_animations = {}                  
 local events_registry = {
     onVrConnected = nil,
@@ -86,10 +86,9 @@ function CameraVR:updatePose(x, y, z) self.x, self.y, self.z = x, y, z end
 
 function CameraVR:getEyePosition(eye)
     local halfIpd = self.ipd / 2
+    cache_vector.x = self.x + (eye == "left" and -halfIpd or halfIpd)
     cache_vector.y = self.y
     cache_vector.z = self.z
-    if eye == "left" then cache_vector.x = self.x - halfIpd
-    else cache_vector.x = self.x + halfIpd end
     return cache_vector 
 end
 
