@@ -1,0 +1,50 @@
+```
+# Lua-specific ignores
+.luac
+*.luac
+?.luac
+
+# Dependencies
+?.rock
+?.rockspec
+?.lua~*
+lua/
+luarocks/
+
+# General build artifacts
+build/
+dist/
+*.so
+*.dll
+*.dylib
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+*.coverage
+
+# Python artifacts (if mixed project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+```
