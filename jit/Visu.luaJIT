@@ -1,4 +1,4 @@
--- Optimized for LuaJIT
+
 local ffi_ok, ffi = pcall(require, "ffi")
 
 local Visu = {
