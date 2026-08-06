@@ -1,4 +1,4 @@
-# Visu.lua v1.1.0
+# Visu.lua v 2.0
 Un framework de post-processing et de rendu réaliste unifié pour Lua
 
 **Visu.lua** est un pipeline graphique léger et performant, conçu pour orchestrer l'intégralité des effets visuels avancés et de la réalité virtuelle dans les moteurs de jeu configurés pour Lua. Développé au sein d'une architecture fichier unique et optimisé pour le maintien de framerates critiques (VR Ready), il intègre des shaders de post-processing cinématographiques, une architecture d'éclairage dynamique orientée objet et un gestionnaire d'animations asynchrones ultra-efficace.
@@ -6,9 +6,7 @@ Un framework de post-processing et de rendu réaliste unifié pour Lua
  Caractéristique Clé : Système Zero-Allocation
 Conçu spécifiquement pour la réalité virtuelle, **Visu.lua** s'exécute à plus de 90 FPS constants sans générer de déchets en mémoire. Grâce à un système de cache vectoriel interne statique, le framework évite de surcharger le *Garbage Collector* de Lua, éliminant ainsi tout risque de micro-saccades (stuttering) en jeu.
 
----
-
-## ✨ Fonctionnalités Majeures
+## Fonctionnalités Majeures
 
 ### Rendu & Post-Processing
 * **Pipeline de Post-Processing :** Injection automatisée de Shaders GLSL embarqués gérant une lueur matérielle réaliste (*Bloom*) par extraction de luminance et un effet de *vignettage cinématographique* dynamique.
@@ -17,7 +15,7 @@ Conçu spécifiquement pour la réalité virtuelle, **Visu.lua** s'exécute à p
 * **Moteur d'Animations par Coroutines :** Création de transitions temporelles complexes (variations météo, lumières vacillantes) par le biais de routines asynchrones non bloquantes.
 * **Registre d'Événements (Callbacks) :** Système d'écoute événementiel découplé pour surveiller l'état du moteur et du matériel (ex: connexion/déconnexion d'un périphérique VR).
 
-### Nouvelles Fonctionnalités (v1.1.0)
+### Nouvelles Fonctionnalités (v2.0)
 
 #### Utilitaires Mathématiques (`Visu.Math`)
 * `lerp(a, b, t)` - Interpolation linéaire pour animations fluides
@@ -73,9 +71,7 @@ local Visu = require("jit.Visu")  -- Version optimisée LuaJIT
 - 🔧 Fonctions mathématiques optimisées
 - 🚀 Compatible avec FFI pour accès direct mémoire
 
-**Note :** La version LuaJIT nécessite LÖVE 11.x+ ou un environnement avec LuaJIT installé.
-
----
+**Note :** La version LuaJIT nécessite LÖVE 11.x+ ou un environnement avec LuaJIT installé
 
 ## 📖 Utilisation de Base
 ```lua
@@ -99,27 +95,22 @@ local pos = Visu.Math.lerp(0, 100, 0.5) -- Retourne 50
 
 -- Afficher l'aide complète
 Visu.help()
-```
-
----
 
 ## Performance
 
 | Métrique | Version Standard | Version LuaJIT |
 |----------|-----------------|----------------|
-| Allocations mémoire | 0 (Zero-GC) | 0 (Zero-GC) |
+| Allocations mémoire | 0  | 0  |
 | FPS moyens (VR) | 90+ | 120+ |
 | Vitesse d'exécution | 1x | 30-50x |
 | Taille du fichier | ~10 KB | ~11 KB |
 | Version actuelle | 1.1.0 | 1.1.0-jit |
 
----
-
-## 🤝 Contribution
+## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou soumettre une pull request pour améliorer Visu.lua.
 
 
-## 📄 License
+## License
 
 Distribué sous la license MIT. Voir `LICENSE` pour plus d'informations.
