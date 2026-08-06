@@ -1,6 +1,6 @@
 
 local Visu = {
-    _VERSION = "1.1.0",
+    _VERSION = "2.0",
     _DESCRIPTION = "Framework visuel tout-en-un avec particules, débogage et utilitaires",
     _CONFIG = {}
 }
