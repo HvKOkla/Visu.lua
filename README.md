@@ -66,14 +66,14 @@ local Visu = require("jit.Visu")  -- Version optimisée LuaJIT
 ```
 
 **Avantages de la version LuaJIT :**
-- ⚡ 30-50x plus rapide que Lua standard
-- 🎯 Cache vectoriel pré-alloué (100 vecteurs)
-- 🔧 Fonctions mathématiques optimisées
-- 🚀 Compatible avec FFI pour accès direct mémoire
+-  30-50x plus rapide que Lua standard
+-  Cache vectoriel pré-alloué (100 vecteurs)
+-  Fonctions mathématiques optimisées
+-  Compatible avec FFI pour accès direct mémoire
 
 **Note :** La version LuaJIT nécessite LÖVE 11.x+ ou un environnement avec LuaJIT installé
 
-## 📖 Utilisation de Base
+## Utilisation de Base
 ```lua
 local Visu = require("Visu")
 
