@@ -1,1 +1,1 @@
-Nothing should be ignored based on the provided file changes, as they only include source files (.md, .lua) without any build artifacts, dependencies, or temporary files.
+Nothing needs to be added to .gitignore since only a README.md file was modified and there are no build artifacts, dependencies, or temporary files in the changes.
