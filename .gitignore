@@ -1,1 +1,1 @@
-Nothing to output - the file changes contain only source/config files (.lua and .md) without any build artifacts, dependencies, or temp files that need to be ignored.
+Nothing should be ignored based on the provided file changes, as they only include source files (.md, .lua) without any build artifacts, dependencies, or temporary files.
