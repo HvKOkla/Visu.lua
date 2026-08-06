@@ -96,16 +96,6 @@ local pos = Visu.Math.lerp(0, 100, 0.5) -- Retourne 50
 -- Afficher l'aide complète
 Visu.help()
 
-## Performance
-
-| Métrique | Version Standard | Version LuaJIT |
-|----------|-----------------|----------------|
-| Allocations mémoire | 0  | 0  |
-| FPS moyens (VR) | 90+ | 120+ |
-| Vitesse d'exécution | 1x | 30-50x |
-| Taille du fichier | ~10 KB | ~11 KB |
-| Version actuelle | 1.1.0 | 1.1.0-jit |
-
 ## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou soumettre une pull request pour améliorer Visu.lua.
